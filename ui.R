@@ -1,4 +1,3 @@
-setwd("~/Desktop/shinyapp/relationapp")
 LCdat<- read.csv("LCdat.csv", stringsAsFactors = F)
 library(shiny)
 mat1<-as.data.frame.matrix(table(LCdat$Referred.To,LCdat$Referred.By))
@@ -11,3 +10,4 @@ shinyUI(fluidPage(
   
 )
 )
+
