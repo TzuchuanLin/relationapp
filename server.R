@@ -1,4 +1,3 @@
-setwd("~/Desktop/shinyapp/relationapp")
 LCdat<- read.csv("LCdat.csv", stringsAsFactors = F)
 library(shiny)
   mat1<-as.data.frame.matrix(table(LCdat$Referred.To,LCdat$Referred.By))
@@ -9,3 +8,4 @@ library(shiny)
             xlim=c(0,7),ylim=c(-2,25), col="steel blue",names.arg=names(mat1),cex.names =0.8)
    })
   )}
+
